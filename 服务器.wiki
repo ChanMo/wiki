@@ -1,0 +1,37 @@
+= 服务器技术 =
+
+== Docker ==
+
+Docker, Docker-compose
+
+== API网关 ==
+
+* express-gateway 基于Express的完全开源, 免费的, 轻量的API网关
+* kong 基于Nginx, 试用Lua作为扩展语言, 企业级的API网关, 部分插件收费
+* AWS 网关, 可能是最终的选择
+
+== CI/CD ==
+
+* Click 快速创建Python脚本
+* Fabric 基于python的服务器管理工具
+* circleci
+
+
+== ServiceLess ==
+
+* Aws Lambda
+
+
+== Auth 统一账户服务 ==
+
+* keycloak 基于Java的开源OAuth2服务
+
+
+== 消息代理/任务队列 ==
+
+* Rabbitmq 消息代理
+* Celery 任务队列
+
+== 网页服务器 ==
+
+* Gunicorn

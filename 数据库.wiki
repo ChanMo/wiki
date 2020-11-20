@@ -1,0 +1,20 @@
+= 数据存储 =
+
+
+== Postgres ==
+
+企业级的开源SQL数据库, 支持NOSQL功能, 如JSON字段
+
+
+== Mongodb ==
+
+最流行的NOSQL数据库
+
+
+== Sqlite3 ==
+
+小型, 单机版SQL数据库
+
+== Redis ==
+
+一般作为缓存数据库

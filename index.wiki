@@ -1,0 +1,26 @@
+= VIM WIKI =
+
+== Python ==
+    * [[Basic]] -- basic wiki
+    * 临时试用国内源地址: `$ pip install flask -i https://pypi.tuna.tsinghua.edu.cn/simple`
+
+== Javascript ==
+
+    * [[JsBasic]]
+
+
+== Common Tools ==
+    * youtube-dl: 下载youtube视频文件
+    * you-get: 下载各种网站上的视频, 音频, 图片等
+    * [[speedtest-cli]]: 网速测试
+    * nmap: 服务器端口扫描 `$ nmap -A -T4 www.baidu.com`
+    * scp: 上传文件到服务器
+
+== 技术架构 ==
+
+    * [[服务器]]
+    * [[数据库]]
+    * [[前端]]
+    * [[后端]]
+    * 其他
+    * [[opensource]]
