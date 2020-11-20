@@ -1,34 +1,30 @@
 = 开源WEB系统 =
 
-== CMS ==
-
-=== Wordpress ===
+== Wordpress ==
 排名第一的基于PHP的个人博客系统, 包含丰富的主题, 插件
 
-== Ecommerce ==
+== Wagtail ==
+[[https://wagtail.io/]]
+基于Django, 简单但比较特别的CMS系统
 
-=== WooEcommerce ===
+== WooEcommerce ==
 基于Wordpress的商城插件
 
-== 聊天 ==
-
-=== Zulip ===
+== Zulip ==
 团队聊天系统, 基于Django
 
-=== chat.io ===
+== chat.io ==
 聊天系统, 基于PHP
 
 
-== 项目管理 ==
-
-=== Taiga ===
+== Taiga ==
 项目开发管理工具, 看板, 敏捷开发, 基于Django
 
-=== Nextcloud ===
+== Nextcloud ==
 个人, 企业的免费云存储, 基于PHP
 
-=== Sentry ===
+== Sentry ==
 Bug追踪平台, 基于Django
 
-=== Prometheus ===
+== Prometheus ==
 基于Go语言的开源监控系统

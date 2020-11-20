@@ -1,0 +1,18 @@
+= Django =
+
+== Django MPTT ==
+
+
+== Django RestFramework ==
+
+
+== Django Juss ==
+一个简单的DjangoAdmin模板, 安装简单
+
+
+== Django Compressor ==
+
+Css, Javascript文件压缩, 缓存
+
+== Cookiecutter-Django ==
+比较全面的Django项目开发模板, 包含Celery, Docker等的常见用法
