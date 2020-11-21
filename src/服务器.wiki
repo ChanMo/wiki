@@ -35,3 +35,20 @@ Docker, Docker-compose
 == 网页服务器 ==
 
 * Gunicorn
+
+
+== ElasticSearch ==
+
+
+== Squid Cache ==
+
+[[http://www.squid-cache.org/|site]]
+
+Squid是Web的缓存代理，支持HTTP，HTTPS，FTP等。通过缓存和重用经常请求的网页，它减少了带宽并缩短了响应时间。Squid具有广泛的访问控制，是一个出色的服务器加速器。它可以在大多数可用的操作系统（包括Windows）上运行，并已获得GNU GPL的许可。
+
+
+== Varnish cache ==
+
+[[https://varnish-cache.org/intro/index.html|site]], [[https://en.wikipedia.org/wiki/Varnish_(software)|wikipedia]]
+
+Varnish是一种HTTP加速器，设计用于内容丰富的动态网站以及API。与其他Web加速器（例如Squid最初是作为客户端缓存开始使用）或Apache和nginx（主要是原始服务器）相比，Varnish被设计为HTTP加速器。与通常支持FTP，SMTP和其他网络协议的其他代理服务器不同，Varnish仅专注于HTTP。
