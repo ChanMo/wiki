@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="style.css">
+<title>Scrapy</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<div id="Scrapy"><h1 id="Scrapy" class="header"><a href="#Scrapy">Scrapy</a></h1></div>
+
+<div id="Scrapy-使用Docker"><h2 id="使用Docker" class="header"><a href="#Scrapy-使用Docker">使用Docker</a></h2></div>
+
+<p>
+创建<code>Dockerfile</code>
+</p>
+
+<pre>
+FROM python:3
+WORKDIR /app
+ENV TZ Asia/Shanghai
+RUN pip install scrapy -i https://pypi.tuna.tsinghua.edu.cn/simple
+ENTRYPOINT ["scrapy"]
+</pre>
+
+<p>
+生成Docker镜像
+</p>
+
+<pre>
+$ docker build . -t cc/scrapy
+</pre>
+
+<p>
+初始化单个项目
+</p>
+
+<pre>
+$ docker rm --rm -it -v $(pwd):/app cc/scrapy startproject mysite
+</pre>
+
+<p>
+执行命令
+</p>
+
+<pre>
+$ docker rm --rm -it -v $(pwd):/app cc/scrapy crawl demo
+</pre>
+
+<p>
+运行Shell, 进行抓取调试
+</p>
+
+<pre>
+$ docker run --rm -it cc/scrapy shell 'http://quotes.toscrape.com/page/1/'
+</pre>
+
+<p>
+使用Bash的Alias缩短命令输入, 修改~/.bashrc或~/.zshrc, 加入
+</p>
+
+<pre>
+alias scrapy='docker run --rm -it -v $(pwd):/app cc/scrapy'
+</pre>
+
+</body>
+</html>

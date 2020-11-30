@@ -4,6 +4,7 @@
     * [[Basic]] -- basic wiki
     * 临时试用国内源地址: `$ pip install flask -i https://pypi.tuna.tsinghua.edu.cn/simple`
     * [[Django]]
+    * [[Scrapy]]
 
 == Javascript ==
 

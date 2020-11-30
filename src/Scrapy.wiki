@@ -1,0 +1,43 @@
+= Scrapy =
+
+== 使用Docker ==
+
+创建`Dockerfile`
+
+{{{
+FROM python:3
+WORKDIR /app
+ENV TZ Asia/Shanghai
+RUN pip install scrapy -i https://pypi.tuna.tsinghua.edu.cn/simple
+ENTRYPOINT ["scrapy"]
+}}}
+
+生成Docker镜像
+
+{{{
+$ docker build . -t cc/scrapy
+}}}
+
+初始化单个项目
+
+{{{
+$ docker rm --rm -it -v $(pwd):/app cc/scrapy startproject mysite
+}}}
+
+执行命令
+
+{{{
+$ docker rm --rm -it -v $(pwd):/app cc/scrapy crawl demo
+}}}
+
+运行Shell, 进行抓取调试
+
+{{{
+$ docker run --rm -it cc/scrapy shell 'http://quotes.toscrape.com/page/1/'
+}}}
+
+使用Bash的Alias缩短命令输入, 修改~/.bashrc或~/.zshrc, 加入
+
+{{{
+alias scrapy='docker run --rm -it -v $(pwd):/app cc/scrapy'
+}}}
